@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue-50: #3c85f3;
+    --blue-100: #001c81;
+    --shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif";
+    text-decoration: none;
+    font-weight: 400;
+}
+
+main {
+    position: relative;
+    max-width: 400px;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 3px solid var(--blue-100);
+    border-radius: .5rem;
+    box-shadow: 3px 3px 2px rgba(56, 56, 56, 0.137);
+}
+
+#refresh {
+    position: absolute;
+    width: 2rem;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+
+#logo {
+    width: 5rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.input label {
+    font-size: 1.1rem;
+}
+
+.input input {
+    width: 320px;
+    border-radius: 0.5rem;
+    border: 3px solid var(--blue-100);
+    padding: .5rem 1rem;
+}
+
+.none {
+    display: none;
+}
+
+.btn-default {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    border-radius: 0.625rem;
+    border: 3px solid var(--blue-100);
+    background-color: var(--blue-50);
+    margin-top: -1rem;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    opacity: .8;
+}

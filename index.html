@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador Link Whatsapp | FidelisCode</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <script defer src="/js/script.js"></script>
 </head>
 <body>
-    <label for="phoneNumber">Digite o número:</label>
-    <input type="text" name="phoneNumber" id="phoneNumber" maxlength="20">
-    <button id="generateBtn">Gerar</button>
-
-    <div class="result-section">
-        <h1 id="result"></h1>
-        <a href="" id="whatsappBtn">Enviar mensagem</a>
-    </div>
+    <main>
+        <img src="assets/refresh.svg" id="refresh">
+        <img src="assets/fideliscode_logo.png" id="logo">
+        <h1>Envie Whatsapp sem salvar <br> número!</h1>
+        
+        <div class="input">
+            <label for="phoneNumber">Digite o número:</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" maxlength="20">
+        </div>
+        <div class="btn">
+            <button id="generateBtn" class="btn-default">Gerar Link</button>
+            <a href="" id="link" class="none btn-default">Enviar msg!</a>
+        </div>
+    </main>
 </body>
 </html>
